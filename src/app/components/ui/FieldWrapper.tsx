@@ -6,11 +6,18 @@ interface FieldWrapperProps {
 }
 
 const FieldWrapper = ({ children }: FieldWrapperProps) => {
+
+  const handleEdit = () => {
+    
+  }
+
   return (
     <div className='border p-3 rounded-lg'>
         {children}
         <div className="flex justify-end items-center gap-3 mt-2">
-            <button>
+            <button 
+            onClick={handleEdit}
+            >
                 <Pencil className='w-5 h-5 text-gray-400'/>
             </button>
             <button>

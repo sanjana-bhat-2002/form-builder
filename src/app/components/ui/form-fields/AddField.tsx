@@ -1,11 +1,11 @@
 import React from 'react';
 
-interface TextAreaProps {
+interface AddFieldProps {
     field: string;
     addField: (fieldType: string) => void;
 }
 
-const TextArea: React.FC<TextAreaProps> = ({ field, addField }) => {
+const AddField: React.FC<AddFieldProps> = ({ field, addField }) => {
     const handleClick = () => {
         addField(field);
     };
@@ -21,4 +21,4 @@ const TextArea: React.FC<TextAreaProps> = ({ field, addField }) => {
   )
 }
 
-export default TextArea;
+export default AddField;

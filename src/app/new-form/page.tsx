@@ -16,6 +16,10 @@ const NewFormPage = () => {
         });
     };
 
+    const removeField = (fieldType: string) => {
+        
+    }
+
     useEffect(() => {
         console.log("Updated Fields", fields);
     }, [fields]);
